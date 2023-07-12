@@ -1,8 +1,8 @@
 import { Routes } from "react-router-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./pages/Home/Home"
-import About from ".pages/About/About"
-import Error from ".pages/Error/Error"
+import About from "./pages/About/About"
+import Error from "./pages/Error/Error"
 function App() {
   return (
     <BrowserRouter>
