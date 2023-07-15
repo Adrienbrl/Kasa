@@ -1,0 +1,28 @@
+$couleur-txt-principal: #ff6060;
+$couleur-txt-hover: #ffa5a5;
+
+.error {
+    color: $couleur-txt-principal;
+    padding-bottom: 10px;
+    text-align: center;
+
+    h1 {
+        font-size: 200px;
+        padding: 20px 0 10px;
+    }
+
+    p {
+        font-size: 24px;
+        padding-bottom: 100px;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: $couleur-txt-principal;
+
+    :hover {
+        color: $couleur-txt-hover;
+        transition: 0.3s all;
+    }
+}

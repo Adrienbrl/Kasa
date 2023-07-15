@@ -1,0 +1,22 @@
+.error {
+  color: #ff6060;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.error h1 {
+  font-size: 200px;
+  padding: 20px 0 10px;
+}
+.error p {
+  font-size: 24px;
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: underline;
+  color: #ff6060;
+}
+a :hover {
+  color: #ffa5a5;
+  transition: 0.3s all;
+}/*# sourceMappingURL=Error.css.map */

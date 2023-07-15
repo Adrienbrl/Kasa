@@ -1,0 +1,20 @@
+$couleur-background-footer : #000;
+$couleur-txt-footer : #fff;
+
+footer {
+    background-color: $couleur-background-footer;
+    color: $couleur-txt-footer;
+    font-size: 18px;
+    text-align: center;
+    padding: 4.5vw 0 2vw;
+    margin-top: 50px;
+
+    img {
+        width: 10vw;
+        margin-bottom: 2.5vw;
+    }
+    
+    p {
+        font-size: 1.5vw;
+    }
+}

@@ -1,0 +1,38 @@
+$couleur-nav-base: #ff6060;
+$couleur-nav-hover: #ffa5a5;
+
+header {
+    margin: 30px 40px 50px;
+
+    nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+    }
+}
+
+.logo {
+    height: 70px;
+
+    img {
+        width: 100%;
+    }
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+    li a {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+        color: $couleur-nav-base;
+        margin-left: 60px;
+    }
+
+    :hover {
+        color: $couleur-nav-hover;
+        transition: 0.3s all;
+        }
+}
