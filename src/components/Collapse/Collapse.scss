@@ -1,0 +1,11 @@
+.collapse {
+    color: red;
+    background-color: black;
+
+    summary {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+}

@@ -1,0 +1,9 @@
+.collapse {
+  color: red;
+  background-color: black;
+}
+.collapse summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=Collapse.css.map */
