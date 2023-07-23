@@ -1,1 +1,90 @@
-/*# sourceMappingURL=Logements.css.map */
+.logement-banner {
+  margin-inline: 40px;
+  height: 415px;
+  position: relative;
+}
+
+.logement-banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  display: none;
+}
+
+.logement-banner img.active {
+  display: block;
+}
+
+.logement-banner i {
+  position: absolute;
+  z-index: 2;
+  font-size: 120px;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logement-banner #left {
+  left: 25px;
+}
+
+.logement-banner #right {
+  right: 25px;
+}
+
+.logement-banner span {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  color: #fff;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 40px;
+  margin-top: 20px;
+}
+
+.carac span {
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.auteur {
+  align-items: center;
+  display: flex;
+}
+.auteur img {
+  border-radius: 50%;
+  width: 64px;
+}
+.auteur p {
+  color: #ff6060;
+  font-size: 18px;
+  margin: 0 10px;
+  text-align: left;
+  width: 90px;
+}
+
+.auteur-note .note i {
+  color: #e3e3e3;
+}
+.auteur-note .note i.color {
+  color: #ff6060;
+  margin: 3px;
+}
+
+.note {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}/*# sourceMappingURL=Logements.css.map */

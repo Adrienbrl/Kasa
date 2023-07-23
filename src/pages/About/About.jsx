@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/Banner/Banner";
@@ -41,20 +40,16 @@ function About(props) {
         imageSrc="../../assets/images/banner-about.png"
         bannerAlt="banner about"
       />
-      <div className="gallery-collapse">
-        {infoCollapse.map((e, index) => (
-          <Collapse
-            key={index}
-            titre={e.titre}
-            description={e.description}
-            style={{
-              transition: "0.3s all",
-              transform: `rotate(${openIndex === index ? "180" : "0"}deg)`,
-            }}
-            onClick={() => handleClick(index)}
-          />
-        ))}
-      </div>
+      {infoCollapse.map((e, index) => (
+        <Collapse
+          key={index}
+          titre={e.titre}
+          description={e.description}
+          id={openIndex === index ? "arrow" : null}
+          pClassName={openIndex !== index ? "hidden" : null}
+          onClick={() => handleClick(index)}
+        />
+      ))}
       <Footer />
     </div>
   );

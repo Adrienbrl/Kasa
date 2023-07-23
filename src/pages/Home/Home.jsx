@@ -16,7 +16,7 @@ function Home(props) {
       />
       <div className="gallery">
         {logementsList.map((e) => (
-          <Card key={e.id} imageSrc={e.cover} titre={e.title} />
+          <Card key={e.id} id={e.id} imageSrc={e.cover} titre={e.title} />
         ))}
       </div>
       <Footer />

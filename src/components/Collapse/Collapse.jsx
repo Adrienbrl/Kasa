@@ -3,17 +3,12 @@ import "./Collapse.scss";
 
 function Collapse(props) {
   return (
-    <details className="collapse">
-      <summary>
-        {props.titre}
-        <i
-          style={props.style}
-          onClick={props.onClick}
-          className="fa-solid fa-chevron-up drop"
-        ></i>
-      </summary>
-      <p>{props.description}</p>
-    </details>
+    <div className="collapse">
+      <h3 onClick={props.onClick}>
+        {props.titre} <i id={props.id} className="fa-solid fa-chevron-up"></i>
+      </h3>
+      <p className={props.pClassName}>{props.description}</p>
+    </div>
   );
 }
 

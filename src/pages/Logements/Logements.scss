@@ -1,0 +1,127 @@
+.logement-banner {
+    margin-inline: 40px;
+    height: 415px;
+    position: relative;
+}
+
+.logement-banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    position: absolute;
+    display: none;
+}
+
+.logement-banner img.active {
+    display: block;
+}
+
+.logement-banner i {
+    position: absolute;
+    z-index: 2;
+    font-size: 120px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logement-banner #left {
+    left: 25px;
+}
+
+.logement-banner #right {
+    right: 25px;
+}
+
+.logement-banner span {
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    color: #fff;
+
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 40px;
+    margin-top: 20px;
+}
+
+.carac {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0;
+}
+
+.logement-tag {
+    display: flex;
+    margin: 15px 0 5px;
+}
+
+.tag {
+    background: #ff6060;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 8px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logement-titre-loca {
+    color: #ff6060;
+
+    h3 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+
+.auteur {
+    
+    align-items: center;
+    display: flex;
+    
+    img {
+         border-radius: 50%;
+         width: 64px;
+    }
+    
+    p {
+        color: #ff6060;
+        font-size: 18px;
+        text-align: right;
+        width: 90px;
+        margin: 0 10px;
+    }
+}
+
+.auteur-note .note {
+    i {
+        color: #e3e3e3;
+        margin: 3px;
+    }
+    i.color {
+    color: #ff6060;
+    margin: 3px;
+}
+
+}
+.note {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}

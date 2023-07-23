@@ -1,9 +1,36 @@
 .collapse {
-  color: red;
-  background-color: black;
+  margin-top: 25px;
+  padding: 5px 0px 0px 0px;
+  color: #fff;
+  cursor: pointer;
+  margin-inline: 150px;
 }
-.collapse summary {
+.collapse h3 {
+  background-color: #ff6060;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: normal;
+  transition: 0.3s all;
+}
+.collapse p {
+  background-color: #f6f6f6;
+  font-size: 18px;
+  padding: 20px 20px 7px 10px;
+  color: #ff6060;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px;
+  padding-inline: 15px;
+}
+
+#arrow {
+  transform: rotate(180deg);
+  transition: 0.3s all;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=Collapse.css.map */

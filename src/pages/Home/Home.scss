@@ -1,0 +1,12 @@
+$color-background-gallery: #f6f6f6;
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin: 60px 40px;
+    padding: 70px 75px;
+    background-color: $color-background-gallery;
+    border-radius: 25px;
+    text-align: center;
+}

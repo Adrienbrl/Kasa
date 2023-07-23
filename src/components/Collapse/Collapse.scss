@@ -1,11 +1,39 @@
 .collapse {
-    color: red;
-    background-color: black;
+    margin-top: 25px;
+    padding: 5px 0px 0px 0px;
+    color: #fff;
+    cursor: pointer;
+    margin-inline: 150px;
 
-    summary {
+    h3 {
+        background-color: #ff6060;
         list-style: none;
         display: flex;
         justify-content: space-between;
-    
+        padding: 8px 15px ;
+        border-radius: 5px;
+        font-size: 22px;
+        font-weight: normal;
+        transition: 0.3s all;
+
     }
+
+    p {
+        background-color: #f6f6f6;
+        font-size:  18px;
+        color: #ff6060;
+        cursor: pointer;
+        padding-inline: 10px;
+        padding: 10px;
+        
+    }
+}
+
+#arrow {
+            transform: rotate(180deg);
+            transition: 0.3s all;
+        }
+
+.hidden {
+    display: none;
 }
