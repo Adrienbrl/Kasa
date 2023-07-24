@@ -1,12 +1,17 @@
+$couleur-background-h3: #ff6060;
+$couleur-txt-h3: #fff;
+$couleur-background-p: #f6f6f6;
+$couleur-txt-p: #ff6060;
+
 .collapse {
     margin-top: 25px;
-    padding: 5px 0px 0px 0px;
-    color: #fff;
+    padding: 5px 0 0 0;
     cursor: pointer;
     margin-inline: 150px;
 
     h3 {
-        background-color: #ff6060;
+        background-color: $couleur-background-h3;
+        color: $couleur-txt-h3;
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -15,13 +20,12 @@
         font-size: 22px;
         font-weight: normal;
         transition: 0.3s all;
-
     }
 
     p {
-        background-color: #f6f6f6;
+        background-color: $couleur-background-p;
+        color: $couleur-txt-p;
         font-size:  18px;
-        color: #ff6060;
         cursor: pointer;
         padding-inline: 10px;
         padding: 10px;
@@ -30,9 +34,9 @@
 }
 
 #arrow {
-            transform: rotate(180deg);
-            transition: 0.3s all;
-        }
+    transform: rotate(180deg);
+    transition: 0.3s all;
+}
 
 .hidden {
     display: none;
