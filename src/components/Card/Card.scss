@@ -43,5 +43,9 @@ $couleur-titre-carte: #fff;
  @media screen and (max-width:740px) {
     .card {
         max-height: 255px;
+
+        h2 {
+            font-size: 3vw;
+        }
     }
  }
