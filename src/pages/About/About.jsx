@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Banner from "../../components/Banner/Banner";
 import Collapse from "../../components/Collapse/Collapse";
+import "./About.scss";
 function About(props) {
   const infoCollapse = [
     {
@@ -27,28 +27,15 @@ function About(props) {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const handleClick = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <div>
+    <div className="about">
       <Header />
       <Banner
         imageSrc="../../assets/images/banner-about.png"
         bannerAlt="banner about"
       />
       {infoCollapse.map((e, index) => (
-        <Collapse
-          key={index}
-          titre={e.titre}
-          description={e.description}
-          id={openIndex === index ? "arrow" : null}
-          pClassName={openIndex !== index ? "hidden" : null}
-          onClick={() => handleClick(index)}
-        />
+        <Collapse key={index} titre={e.titre} description={e.description} />
       ))}
       <Footer />
     </div>

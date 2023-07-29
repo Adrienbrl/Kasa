@@ -30,18 +30,6 @@ function Logements(props) {
     }
   };
 
-  const [collapseStates, setCollapseStates] = useState({
-    description: false,
-    equipments: false,
-  });
-
-  const openCollapse = (collapseId) => {
-    setCollapseStates((prevState) => ({
-      ...prevState,
-      [collapseId]: !prevState[collapseId],
-    }));
-  };
-
   if (!logement) {
     return <Error />;
   }
@@ -103,17 +91,8 @@ function Logements(props) {
         </div>
       </div>
       <div className="logement-collapse">
+        <Collapse titre="Description" description={logement.description} />
         <Collapse
-          id={collapseStates.description ? "arrow" : null}
-          pClassName={collapseStates.description ? "hidden" : null}
-          onClick={() => openCollapse("description")}
-          titre="Description"
-          description={logement.description}
-        />
-        <Collapse
-          id={collapseStates.equipments ? "arrow" : null}
-          pClassName={collapseStates.equipments ? "hidden" : null}
-          onClick={() => openCollapse("equipments")}
           titre="Équipements"
           description={logement.equipments.map((e, index) => (
             <p key={index}>{e}</p>

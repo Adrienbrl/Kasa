@@ -1,3 +1,23 @@
+$couleur-chevron-carrousel: #fff;
+$couleur-span-carrousel: #fff;
+$couleur-titre-logement: #ff6060;
+$couleur-tag-logement: #ff6060;
+$couleur-tag-txt: #fff;
+$couleur-nom-auteur: #ff6060;
+$couleur-star-vide: #e3e3e3;
+$couleur-star-remplie: #ff6060;
+
+%position {
+    position: absolute;
+    z-index: 2;
+}
+
+@mixin position-span ($x : 50%, $y: 5%) {
+    left: $x;
+    bottom: $y;
+    transform: translate(-$x, -$y);
+}
+
 .logement-banner {
     margin-inline: 40px;
     height: 415px;
@@ -17,10 +37,9 @@
     }
 
     i {
-        position: absolute;
-        z-index: 2;
+        @extend %position;
         font-size: 120px;
-        color: #ffffff;
+        color: $couleur-chevron-carrousel;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -34,12 +53,9 @@
     }
 
     span {
-        position: absolute;
-        z-index: 2;
-        bottom: 5%;
-        left: 50%;
-        transform: translate(-50%, -5%);
-        color: #fff;
+        @extend %position;
+        @include position-span;
+        color: $couleur-span-carrousel;
     }
 }
 
@@ -57,7 +73,7 @@
 }
 
 .logement-titre-loca {
-    color: #ff6060;
+    color: $couleur-titre-logement;
 
     h3 {
         font-size: 36px;
@@ -74,9 +90,9 @@
     margin: 15px 0 5px;
 
     .tag {
-         background: #ff6060;
+         background: $couleur-tag-logement;
          border-radius: 15px;
-         color: #fff;
+         color: $couleur-tag-txt;
          font-size: 14px;
          margin-right: 10px;
          padding: 8px;
@@ -90,8 +106,8 @@
 
 .auteur {
     
-    align-items: center;
     display: flex;
+    align-items: center;
     
     img {
          border-radius: 50%;
@@ -99,7 +115,7 @@
     }
     
     p {
-        color: #ff6060;
+        color: $couleur-nom-auteur;
         font-size: 18px;
         text-align: right;
         width: 90px;
@@ -115,13 +131,22 @@
         margin-top: 10px;
 
         i {
-            color: #e3e3e3;
+            color: $couleur-star-vide;
             margin: 3px;
         }
         
         i.color {
-            color: #ff6060;
+            color: $couleur-star-remplie;
             margin: 3px;
         }
+    }
+}
+
+.logement-collapse {
+    display: flex;
+
+    .collapse {
+        width: 50%;
+        margin-inline: 50px;
     }
 }
