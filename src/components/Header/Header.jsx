@@ -5,7 +5,7 @@ function Header(props) {
   return (
     <header>
       <nav>
-        <div className="Logo">
+        <div className="logo">
           <NavLink to="/home">
             <img src="../../../assets/images/LOGO.svg" alt="Logo Kasa" />
           </NavLink>
