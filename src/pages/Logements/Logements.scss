@@ -159,6 +159,7 @@ $couleur-star-remplie: #ff6060;
     .logement-banner {
         max-height: 255px;
         height: 50vw;
+        margin-inline: 20px;
 
         i {
             font-size: 7vw;
@@ -192,9 +193,11 @@ $couleur-star-remplie: #ff6060;
         }
     }
 
-    .tag {
+    .logement-tag {
+        .tag {
         font-size: 2.5vw;
         width: 20vw;
+    }
     }
 
     .auteur {
