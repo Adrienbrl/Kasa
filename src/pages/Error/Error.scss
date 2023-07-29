@@ -3,7 +3,6 @@ $couleur-txt-hover: #ffa5a5;
 
 .error {
     color: $couleur-txt-principal;
-    padding-bottom: 10px;
     text-align: center;
 
     h1 {
@@ -26,3 +25,23 @@ a {
         transition: 0.3s all;
     }
 }
+
+@media screen and (max-width:740px) {
+    .error {
+
+        h1 {
+            font-size: 25vw;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            padding-inline: 10px;
+        }
+    }
+
+    a {
+        font-size: 14px;
+        padding-inline: 10px;
+    }
+ }

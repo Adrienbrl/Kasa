@@ -30,6 +30,11 @@ $couleur-txt-p: #ff6060;
         padding: 10px;
         
     }
+
+    span {
+        display: block;
+        margin: 2px;
+    }
 }
 
 #arrow {
@@ -40,3 +45,18 @@ $couleur-txt-p: #ff6060;
 .hidden {
     display: none;
 }
+
+@media screen and (max-width:740px) {
+    
+    .collapse {
+        margin: 15px;
+
+        h3 {
+            font-size: 3vw;
+        }
+        
+        p{
+            font-size: 2vw;
+        }
+    }
+ }

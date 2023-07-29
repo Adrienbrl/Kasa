@@ -3,3 +3,11 @@
         margin-inline: 150px;
     }
 }
+
+@media screen and (max-width:740px){
+    .about {
+        .collapse {
+            margin-inline: 25px;
+        }
+    }
+}

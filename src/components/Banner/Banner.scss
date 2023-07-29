@@ -42,3 +42,11 @@ $couleur-background-overlay: #00000030;
     }
 }
 
+ @media screen and (max-width:740px) {
+    .banner {
+        height: 110px;
+        margin: 0 20px;
+    }
+ }
+
+

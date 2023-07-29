@@ -31,7 +31,7 @@ function About(props) {
     <div className="about">
       <Header />
       <Banner
-        imageSrc="../../assets/images/banner-about.png"
+        imageSrc="../../assets/images/banner-about.webp"
         bannerAlt="banner about"
       />
       {infoCollapse.map((e, index) => (

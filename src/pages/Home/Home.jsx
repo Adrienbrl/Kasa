@@ -11,7 +11,7 @@ function Home(props) {
       <Header />
       <Banner
         titre="Chez vous, partout et ailleurs"
-        imageSrc="../../assets/images/banner-home.png"
+        imageSrc="../../assets/images/banner-home.webp"
         bannerAlt="banner home"
       />
       <div className="gallery">

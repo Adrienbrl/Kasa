@@ -37,3 +37,9 @@ $couleur-titre-carte: #fff;
         font-size: 1rem;
     }
 }
+
+ @media screen and (max-width:740px) {
+    .card {
+        max-height: 255px;
+    }
+ }

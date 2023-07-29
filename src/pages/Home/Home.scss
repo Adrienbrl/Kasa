@@ -10,3 +10,13 @@ $color-background-gallery: #f6f6f6;
     border-radius: 25px;
     text-align: center;
 }
+
+ @media screen and (max-width:740px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        margin: 22px;
+        padding: 0;
+        background: #fff;
+        grid-gap: 20px;
+    }
+ }

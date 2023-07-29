@@ -68,9 +68,9 @@ function Logements(props) {
           </div>
           <div className="logement-tag">
             {logement.tags.map((e, index) => (
-              <div className="tag">
+              <div key={index} className="tag">
                 {" "}
-                <span key={index}>{e}</span>
+                <span>{e}</span>
               </div>
             ))}
           </div>
@@ -95,7 +95,7 @@ function Logements(props) {
         <Collapse
           titre="Équipements"
           description={logement.equipments.map((e, index) => (
-            <p key={index}>{e}</p>
+            <span key={index}>{e}</span>
           ))}
         />
       </div>

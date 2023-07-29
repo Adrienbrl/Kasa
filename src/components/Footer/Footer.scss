@@ -18,3 +18,9 @@ footer {
         font-size: 1.5vw;
     }
 }
+
+@media screen and (max-width: 740px) {
+    footer {
+        margin-top: 25px;
+    }
+}
