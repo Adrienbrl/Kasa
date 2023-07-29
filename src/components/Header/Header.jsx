@@ -12,10 +12,20 @@ function Header(props) {
         </div>
         <ul>
           <li>
-            <NavLink to="/home">Accueil</NavLink>
+            <NavLink
+              to="/home"
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
+            >
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">À Propos</NavLink>
+            <NavLink
+              to="/about"
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
+            >
+              À Propos
+            </NavLink>
           </li>
         </ul>
       </nav>

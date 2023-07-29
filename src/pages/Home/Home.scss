@@ -1,4 +1,5 @@
 $color-background-gallery: #f6f6f6;
+$color-background-gallery-responsive: #fff;
 
 .gallery {
     display: grid;
@@ -16,7 +17,7 @@ $color-background-gallery: #f6f6f6;
         grid-template-columns: 1fr;
         margin: 22px;
         padding: 0;
-        background: #fff;
+        background: $color-background-gallery-responsive;
         grid-gap: 20px;
     }
  }

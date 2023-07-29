@@ -175,13 +175,6 @@ $couleur-star-remplie: #ff6060;
         padding: 0 20px;
     }
 
-    .auteur-note {
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .logement-titre-loca {
 
         h3 {
@@ -194,10 +187,12 @@ $couleur-star-remplie: #ff6060;
     }
 
     .logement-tag {
+
         .tag {
         font-size: 2.5vw;
         width: 20vw;
     }
+
     }
 
     .auteur {
@@ -210,6 +205,13 @@ $couleur-star-remplie: #ff6060;
         p {
             font-size: 3vw;
         }
+    }
+
+    .auteur-note {
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .logement-collapse {

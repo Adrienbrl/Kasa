@@ -37,6 +37,10 @@ ul {
   }
 }
 
+.nav-active {
+    text-decoration: underline #ff6060;
+}
+
 @media screen and (max-width: 670px) {
   header {
     margin: 20px;
