@@ -46,19 +46,23 @@ function Logements(props) {
             alt={logement.title}
           />
         ))}
-        <i
-          onClick={() => handleClickBack()}
-          id="left"
-          className="fa-solid fa-chevron-left "
-        ></i>
-        <i
-          onClick={() => handleClickNext()}
-          id="right"
-          className="fa-solid fa-chevron-right "
-        ></i>
-        <span>
-          {activeImg + 1}/{logement.pictures.length}
-        </span>
+        {logement.pictures.length <= 1 ? null : (
+          <div>
+            <i
+              onClick={() => handleClickBack()}
+              id="left"
+              className="fa-solid fa-chevron-left "
+            ></i>
+            <i
+              onClick={() => handleClickNext()}
+              id="right"
+              className="fa-solid fa-chevron-right "
+            ></i>
+            <span>
+              {activeImg + 1}/{logement.pictures.length}
+            </span>
+          </div>
+        )}
       </div>
       <div className="information">
         <div className="carac">
@@ -69,7 +73,6 @@ function Logements(props) {
           <div className="logement-tag">
             {logement.tags.map((e, index) => (
               <div key={index} className="tag">
-                {" "}
                 <span>{e}</span>
               </div>
             ))}
